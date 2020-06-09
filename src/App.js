@@ -2,9 +2,13 @@ import React from "react";
 import getContacts from "./api/index";
 
 export class App extends React.Component {
+  state = { contacts: [] };
+
   async componentDidMount() {
-    console.log(await getContacts());
+    const contacts = await getContacts();
+    this.setState({ contacts });
   }
+
   render() {
     return (
       <div>
