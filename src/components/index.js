@@ -3,3 +3,4 @@
 // export { Email } from "./Email";
 // export { Name } from "./Name";
 // export { Phone } from "./Phone";
+export { contactCard } from "./ContactCard";

@@ -1,4 +1,4 @@
-export default async (getContacts) => {
-  const results = await fetch("https://randomuser.me/api");
-  return results.json();
+export const getContacts = async (numOfResults = 12) => {
+  const res = await fetch(`https://randomuser.me/api/?results=${numOfResults}`);
+  return res.json();
 };
