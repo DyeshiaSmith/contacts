@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-import { InfoDisplay } from "./InfoDisplays";
+import { InfoDisplay } from "./InfoDisplay";
 import { InfoToggle } from "./InfoToggle";
 import { Pic } from "./Pic";
 
@@ -53,7 +53,7 @@ export class ContactCard extends React.Component {
     return (
       <div className="ContactCard">
         <Pic name={this.props.name} pic={this.props.picture} />
-        <InfoDisplay />
+        <InfoDisplay info={this.props[this.state.activeInfo]} />
         <div className={styles.infoToggles}>{this.renderInfoToggles()}</div>
       </div>
     );
