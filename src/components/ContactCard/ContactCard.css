@@ -1,13 +1,16 @@
 .ContactCard {
   align-items: center;
-  background-color: #f9f9f9;
-  border-radius: 4px;
+  border-radius: 35px;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
   border: solid thin #333;
   display: flex;
   flex-direction: column;
   margin: 0.5rem;
+  margin-bottom: 3rem;
   max-width: 550px;
   padding: 1rem 0.5rem;
-  width: 80vw;
+  width: 50vw;
+  height: 40vw;
+  color: aqua;
+  background-color: #AE5D00;
 }

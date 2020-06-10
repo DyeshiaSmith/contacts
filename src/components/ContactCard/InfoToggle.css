@@ -1,3 +1,4 @@
 .InfoToggle {
-  transition: font-size 0.2s ease;
+  transition: font-size 0.2s ease-in-out;
+  color: aqua;
 }
