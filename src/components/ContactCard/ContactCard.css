@@ -1,4 +1,10 @@
 .ContactCard {
+  align-items: center;
+  border: solid thin #333;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  margin: 0.5rem;
+  max-width: 550px;
+  padding: 1rem 0;
+  width: 80vw;
 }

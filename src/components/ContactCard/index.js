@@ -5,6 +5,8 @@ import { InfoToggle } from "./InfoToggle";
 import { Pic } from "./Pic";
 
 import "./ContactCard.css";
+import styles from "./ContactCard.module.css";
+
 export class ContactCard extends React.Component {
   static propTypes = {
     cell: PropTypes.string,
@@ -35,9 +37,9 @@ export class ContactCard extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="ContactCard">
         <Pic name={this.props.name} pic={this.props.picture} />
-        <div className="ContactCard">{this.renderInfoToggles()}</div>
+        <div className={styles.infoToggles}>{this.renderInfoToggles()}</div>
       </div>
     );
   }
