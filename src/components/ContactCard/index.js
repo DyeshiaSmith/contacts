@@ -30,16 +30,8 @@ export class ContactCard extends React.Component {
       info: "cell",
     },
     {
-      icon: "birthday-cake",
-      info: "dob",
-    },
-    {
       icon: "envelope",
       info: "email",
-    },
-    {
-      icon: "compass",
-      info: "location",
     },
   ];
 
